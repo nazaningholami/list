@@ -254,22 +254,12 @@
   .rounded-md {
     border-radius: var(--radius-md);
   }
-  .rounded-b-md {
-    border-bottom-right-radius: var(--radius-md);
-    border-bottom-left-radius: var(--radius-md);
-  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-blue-600 {
-    border-color: var(--color-blue-600);
-  }
   .border-orange-500 {
     border-color: var(--color-orange-500);
-  }
-  .bg-blue-600 {
-    background-color: var(--color-blue-600);
   }
   .bg-orange-500 {
     background-color: var(--color-orange-500);
@@ -304,6 +294,9 @@
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
+  .pr-2 {
+    padding-right: calc(var(--spacing) * 2);
+  }
   .text-gray-200 {
     color: var(--color-gray-200);
   }
@@ -322,11 +315,6 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
-  }
-  .checked\:bg-blue-600 {
-    &:checked {
-      background-color: var(--color-blue-600);
-    }
   }
   .focus\:border-orange-300 {
     &:focus {
