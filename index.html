@@ -9,9 +9,10 @@
 </head>
 <body>
     <nav class="flex w-full top-0 left-0 bg-orange-500 text-gray-200 py-4 px-2.5 justify-between items-center">
-        <h1>لیست کار های روزمره</h1>
+        <h1 class="text-2xl">لیست کار های روزمره</h1>
         <button class="py-2 px-5 bg-white text-gray-500 rounded-md" id="addbtn">اضافه کردن</button>
     </nav>
+     <div id="error" class="py-2  hidden text-center bg-red-500 mt-20 text-white text-2xl font-bold"></div>
     <div id="container" class="w-full h-screen hidden justify-center items-center">
     <div class="w-9/12 mx-auto">
         
@@ -19,7 +20,7 @@
             <h1 class="py-3 text-white bg-orange-500 border rounded-md items-center justify-center m-auto p-2 ">فورم اضافه کردن کار های روزمره</h1>
             <input class="border w-full py-2.5 border-orange-500 rounded-md focus:border-orange-300 pr-2" type="text" id="input" value="" placeholder="امروز چه پلان دارید">
             <select class=" py-2.5 w-full border border-orange-500 rounded-md" id="order">
-                <option value="important" class="rounded-md">مهم</option
+                <option value="important" class="rounded-md">مهم</option>
                 <option value="mediocre" class="rounded-md">متوسط</option>
                 <option value="optional" class="rounded-md">اختیاری</option>
             </select>
@@ -27,8 +28,6 @@
         </form>
     </div>
     </div>
-    <div id="error">
-
-    </div>
+   <div id="todocontainer" class="w-full my-24 p-4 flex flex-col items-center gap-3"></div>
 </body>
 </html>
